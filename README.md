@@ -1,5 +1,5 @@
 # e-commerce
-This is a mini project on Database Management System using MySQL. Python(Flask) is used for backend purpose and HTML and CSS are used for frontend purposes. 
+This is a mini project on Database Management System using MySQL that manages Products, Users and Orders. Python(Flask) is used for backend purpose and HTML and CSS are used for frontend purposes. 
 1. Create a folder named E commerce.
 2. In that folder, create another 2 folders named static and templates and 2 text files app.py and schema.sql.
 3. In static, add 2 files: 1 -> Logo(shopeasy.png)
