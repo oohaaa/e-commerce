@@ -11,3 +11,6 @@ This is a mini project on Database Management System using MySQL. Python(Flask) 
 5. Copy the code from schema.sql and run it in SQL Workbench.
 6. In Terminal, go to the 'Ecommerce' directory and run the command: 'python app.py'.
 7. Add and delete the elements in the page opened and the data will get changed in the database that is being run in the Workbench.
+
+
+![image](https://github.com/user-attachments/assets/484a4edd-4ecd-4fee-8e24-57d604aad189)
