@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Orders</title>
+</head>
+<body>
+    <main>
+
+        <h1 class="manage-products">Manage Orders</h1> 
+        <a href="/" class="back-home">Back to Home</a> 
+        <h2 class="products-list">Orders List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ order.id }}</td>
+                    <td>{{ order.user_name }}</td>
+                    <td>{{ order.product_name }}</td>
+                    <td>{{ order.quantity }}</td>
+                    <td>
+                        <button onclick="deleteOrder({order,id})">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Add Order</h2>
+        <form id="addOrderForm">
+            <label for="user_id">User ID:</label>
+            <input type="number" id="user_id" name="user_id" required>
+            <label for="product_id">Product ID:</label>
+            <input type="number" id="product_id" name="product_id" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <button type="submit">Add Order</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById('addOrderForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const user_id = document.getElementById('user_id').value;
+            const product_id = document.getElementById('product_id').value;
+            const quantity = document.getElementById('quantity').value;
+
+            await fetch('/orders', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user_id, product_id, quantity })
+            });
+            location.reload();
+        });
+
+        async function deleteOrder(id) {
+            await fetch(`/orders?id=${id}`, { method: 'DELETE' });
+            location.reload();
+        }
+    </script>
+</body>
+</html>

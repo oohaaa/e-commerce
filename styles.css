@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #8fd3f4, #84fab0, #8fd3f4);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Updated CSS for index page */
+
+header {
+    text-align: center; /* Center-align header content */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add spacing below the logo */
+}
+
+.cover-image {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    background-color: rgb(17, 17, 68);
+    display: flex; /* Enables horizontal layout */
+    align-items: center; /* Vertically aligns items (logo and text) */
+    justify-content: center; /* Centers the content horizontally */
+    gap: 20px; /* Adds space between the logo and the welcome text */
+}
+
+h1 {
+    font-size: 2rem; /* Adjust the font size of the welcome text */
+    color: white; /* Ensure good readability */
+    margin: 10px 0; /* Remove any extra margin around the text */
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    margin-top: 20px; /* Space between title and links */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(20, 30, 70);
+    background-color: linear-gradient(#80c4f5,rgb(248, 166, 237));
+    font-weight: bold;
+    padding: 5px;
+    /* border-bottom: 2px solid transparent; */
+    transition: border-bottom-color 0.3s;
+}
+
+
+nav h4 {
+    margin: 0; 
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation bar */
+nav {
+    margin-top: 20px 0;
+}
+
+
+/* Style for "Back to Home" Link */
+a.back-home {
+    color: #222dff;  /* Orange color */
+}
+
+a.back-home:hover {
+    color: #222dff;  /* Darker red on hover */
+}
+
+/* Style for "Manage Products" Link */
+h1.manage-products {
+    color: #1b3f65;  /* Green color */
+}
+
+h1.manage-products:hover {
+    color: #1b3f65;  /* Darker green on hover */
+}
+
+/* Style for "Products List" Link */
+h2.products-list {
+    color: #2196F3;  /* Blue color */
+}
+
+h2.products-list:hover {
+    color: #1976D2;  /* Darker blue on hover */
+}
+
+
+/* Main content styling */
+main {
+    flex-grow: 1; /* Main area takes remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent scrollbars or overflow */
+}
+
+/* Footer styling */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 10px 0;
+    flex-shrink: 0; /* Ensure footer remains visible */
+}
+
+/* Prevent extra spacing */
+h1, h2 {
+    margin: 10px 0;
+}
+
+table {
+    margin: 20px auto; /* Center horizontally */
+    border-collapse: collapse; /* Neat table styling */
+    width: 80%; /* Optional: Control table width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    background-color: white; /* Ensure a contrasting background */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Add border between cells */
+    padding: 10px;
+    text-align: center; /* Center text inside cells */
+}
+
+table th {
+    background-color: #8fd3f4; /* Add a subtle header background */
+    color: #333;
+}
+
+table td {
+    color: #555;
+}
+
+main {
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+h2 {
+    text-align: center; /* Center the section titles */
+    color: #333; /* Optional: Ensure readability */
+    margin-bottom: 20px; /* Add spacing below the title */
+}

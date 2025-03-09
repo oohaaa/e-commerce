@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopeasy</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+        background-color: rgb(53,143,53);
+        color: white;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Stack logo and text vertically */
+        text-align: center;
+        }
+        header img {
+            height: 100px;
+            width: auto;
+            margin-bottom: 0.5rem; /* Space between logo and title */
+        }
+        .header-title h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        .header-title p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .header-title p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Main Content Section */
+        .main {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        .main h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .option {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .option:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .option a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .option a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        .footer-icons {
+            margin-top: 1rem;
+        }
+        .footer-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .footer-icons a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="/static/shopeasy.png" alt="Shopeasy Logo">
+        <div class="header-title">
+            <h1>Shopeasy</h1>
+            <p>Your one-stop shop for all your needs!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="/users">Products</a>
+        <a href="/users">Users</a>
+        <a href="/orders">Orders</a>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="main">
+        <h2>Explore Our Features</h2>
+        <div class="options">
+            <div class="option">
+                <h3>Products</h3>
+                <p>Discover our wide range of products.</p>
+                <a href="/products">View Products</a>
+            </div>
+            <div class="option">
+                <h3>Users</h3>
+                <p>Manage user accounts effortlessly.</p>
+                <a href="/users">Manage Users</a>
+            </div>
+            <div class="option">
+                <h3>Orders</h3>
+                <p>Track and manage orders seamlessly.</p>
+                <a href="orders">View Orders</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Shopeasy. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="#">🔗 Facebook</a>
+            <a href="#">🔗 Twitter</a>
+            <a href="#">🔗 Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
